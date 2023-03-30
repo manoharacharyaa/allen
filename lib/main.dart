@@ -16,11 +16,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Allen',
       theme: ThemeData.dark(useMaterial3: true).copyWith(
-        scaffoldBackgroundColor: Pallete.darkBlue,
+        scaffoldBackgroundColor: Pallete.kAppTheme,
+        appBarTheme: AppBarTheme(backgroundColor: Pallete.kAppTheme),
       ),
       home: const HomePage(),
     );
   }
 }
-
-
