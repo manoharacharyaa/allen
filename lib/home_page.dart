@@ -1,3 +1,4 @@
+import 'package:allen/feature_box.dart';
 import 'package:allen/pallete.dart';
 import 'package:flutter/material.dart';
 
@@ -88,10 +89,32 @@ class _HomePageState extends State<HomePage> {
           ),
           Column(
             children: [
-              
+              FeatureBox(
+                color: Pallete.firstSuggestionBoxColor,
+                headerText: 'Chat-Bot',
+                discriptionText:
+                    'A smarter way to stay organized and informed with Chat-Boat',
+              ),
+              FeatureBox(
+                color: Pallete.firstSuggestionBoxColor,
+                headerText: 'Dall-E',
+                discriptionText:
+                    'Get inspired and stay creative with your personal assistant powered by Dall-E',
+              ),
+              FeatureBox(
+                color: Pallete.firstSuggestionBoxColor,
+                headerText: 'Smart Voice Assistant',
+                discriptionText:
+                    'Get the best of both worlds with a voice assistant powered by AI',
+              ),
             ],
           ),
         ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Pallete.assistantCircleColor,
+        onPressed: () {},
+        child: const Icon(Icons.mic),
       ),
     );
   }
