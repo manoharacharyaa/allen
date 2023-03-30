@@ -46,6 +46,32 @@ class _HomePageState extends State<HomePage> {
               ),
             ],
           ),
+          //chat bubble
+          Container(
+            padding: const EdgeInsets.symmetric(
+              horizontal: 20,
+              vertical: 10,
+            ),
+            margin:
+                const EdgeInsets.symmetric(horizontal: 30).copyWith(top: 20),
+            decoration: BoxDecoration(
+              border: Border.all(color: Pallete.borderColor),
+              borderRadius: BorderRadius.circular(20).copyWith(
+                topLeft: Radius.zero,
+              ),
+            ),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(vertical: 10),
+              child: const Text(
+                'Good Morning, what task can I do for you?',
+                style: const TextStyle(
+                  color: Pallete.mainFontColor,
+                  fontSize: 25,
+                  fontFamily: 'Cera Pro',
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );
